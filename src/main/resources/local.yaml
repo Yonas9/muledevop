@@ -1,0 +1,6 @@
+anypoint:
+  username: "SelfLearn"
+  password: "LearnMule#2023"
+  
+app:
+ name:"hellogithub"
