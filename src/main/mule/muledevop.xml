@@ -7,6 +7,8 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="3bed8188-ef7e-4a30-9472-f28670a05e5a" >
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
+	<configuration-properties doc:name="Configuration properties" doc:id="1c34709b-b9ee-4eb5-9eb5-3a61b92ebd96" file="${env}.yaml" />
+	<global-property doc:name="Global Property" doc:id="f78d233d-9ec3-44c3-8b06-bed4b7e158e3" name="env" value="local" />
 	<flow name="muledevopFlow" doc:id="f31ae241-6e72-4e73-9a96-6b9488b4fb25" >
 		<http:listener doc:name="Listener" doc:id="22f2e445-a61f-4c9c-84af-273623027873" config-ref="HTTP_Listener_config" path="/hello"/>
 		<set-payload value="Hello World." doc:name="Set Payload" doc:id="10f7082e-1d0a-49b5-b5b8-81e8b1a3e83b" />

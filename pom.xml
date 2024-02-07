@@ -42,7 +42,9 @@
 						<workers>1</workers>
 						<objectStoreV2>true</objectStoreV2>
 						<!-- Start: SECURED PROPERTIES CI/CD -->
-						
+						<properties>
+							<secureProperties>env</secureProperties>
+						</properties>
 						<!-- End: SECURED PROPERTIES CI/CD -->
 					</cloudHubDeployment>
 					<classifier>mule-application</classifier>
